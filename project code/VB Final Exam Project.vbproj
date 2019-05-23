@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4A2F469-EDC6-4E7E-A83A-4539424BDB51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VB_Final_Exam_Project.My.MyApplication</StartupObject>
+    <RootNamespace>VB_Final_Exam_Project</RootNamespace>
+    <AssemblyName>VB Final Exam Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VB Final Exam Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VB Final Exam Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrackParty.Designer.vb">
+      <DependentUpon>CrackParty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CrackParty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gamble.Designer.vb">
+      <DependentUpon>Gamble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gamble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lava2.Designer.vb">
+      <DependentUpon>Lava2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lava2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lava3.Designer.vb">
+      <DependentUpon>Lava3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lava3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LavaLevel2.Designer.vb">
+      <DependentUpon>LavaLevel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LavaLevel2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LavaLevel3.Designer.vb">
+      <DependentUpon>LavaLevel3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LavaLevel3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu1.Designer.vb">
+      <DependentUpon>Menu1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonsterLoan.Designer.vb">
+      <DependentUpon>MonsterLoan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MonsterLoan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phantum.Designer.vb">
+      <DependentUpon>Phantum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Phantum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextToSpeech.Designer.vb">
+      <DependentUpon>TextToSpeech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TextToSpeech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrasureChest.Designer.vb">
+      <DependentUpon>TrasureChest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrasureChest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Twilight2.Designer.vb">
+      <DependentUpon>Twilight2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Twilight2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstLand.Designer.vb">
+      <DependentUpon>FirstLand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FirstLand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GreenLdsc.Designer.vb">
+      <DependentUpon>GreenLdsc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GreenLdsc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LavaLdsc.Designer.vb">
+      <DependentUpon>LavaLdsc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LavaLdsc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrickLdsc.Designer.vb">
+      <DependentUpon>BrickLdsc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrickLdsc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharacterSel.Designer.vb">
+      <DependentUpon>CharacterSel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterSel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrackParty.resx">
+      <DependentUpon>CrackParty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gamble.resx">
+      <DependentUpon>Gamble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lava2.resx">
+      <DependentUpon>Lava2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lava3.resx">
+      <DependentUpon>Lava3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LavaLevel2.resx">
+      <DependentUpon>LavaLevel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LavaLevel3.resx">
+      <DependentUpon>LavaLevel3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu1.resx">
+      <DependentUpon>Menu1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonsterLoan.resx">
+      <DependentUpon>MonsterLoan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phantum.resx">
+      <DependentUpon>Phantum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextToSpeech.resx">
+      <DependentUpon>TextToSpeech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrasureChest.resx">
+      <DependentUpon>TrasureChest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Twilight2.resx">
+      <DependentUpon>Twilight2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstLand.resx">
+      <DependentUpon>FirstLand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GreenLdsc.resx">
+      <DependentUpon>GreenLdsc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LavaLdsc.resx">
+      <DependentUpon>LavaLdsc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrickLdsc.resx">
+      <DependentUpon>BrickLdsc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharacterSel.resx">
+      <DependentUpon>CharacterSel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirt vb pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0110.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0033.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0093.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0090.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first tile practice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wood_tileset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first tile practice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lava_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0083.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0065.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalgrass.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first lanscape practice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TreasureChest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TreasureChest1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrackLounge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TreasureChest2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brickfinal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-ball-image-0013.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loan tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0123.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0041.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0109.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-01101.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0104.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0045.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0038.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamble tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-dice-image-0016.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-money-image-0055.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-money-image-0049.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-money-image-0062.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-money-image-0011.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavafinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-01231.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0158.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-00451.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0020.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-witch-image-0128.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-00452.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-fire-image-0371.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lava3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0065.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-01232.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-devil-image-0172.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backtiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0009.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0108.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-diamond-and-gem-image-0002.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-diamond-and-gem-image-0008.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-computer-image-0085.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue tiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0080.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0053.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0068.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-00531.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-00681.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0007.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VbFinalMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TombRaider.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thats - Life.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThatsLifeVB.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AIVB.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0010.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0172.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grey tiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0043.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-00682.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0190.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brickfinal3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0203.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0063.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0062.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwlightZone.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightinggif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\potion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AIVB2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\second lava 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavaLevel3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavaLevel31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavaLevel32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavaLevel3final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-monster-image-0046.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-heart-image-0503.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-fire-image-0099.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0081.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0064.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-effect-image-0005.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-diamond-and-gem-image-0010.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
